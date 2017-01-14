@@ -64,6 +64,7 @@ header{
 .page{margin: auto;}
 .page-content{
 	width: 100%;
+	margin-top: 3rem;
 }
 .bar{
 	width: 100%;
@@ -242,7 +243,7 @@ header{
 	top: 3.5rem;
 	right: 5px;
 	width: 100px;
-	height: 120px;
+	height: 90px;
 	background-color: #fff;
 	border-radius: 4px;
 	display: none;
@@ -250,9 +251,16 @@ header{
 }
 #nav-toggle-content ul li{
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
+	height: 30px;
+	line-height: 30px;
 	padding-left: 5px;
+}
+#nav-toggle-content ul li img{
+	width: 18px;
+	height: 18px;
+	padding-top: 6px;
+	float:left;
+	padding-right:4px;
 }
 #nav-toggle-content .arrow{
 	width: .5rem;
@@ -263,7 +271,83 @@ header{
 
 /*Button*/
 .carrot_btn{
-	display: block;
+	color: #666;
+	background-color: #EEE;
+	border-color: #EEE;
+	font-weight: 300;
+	font-size: 16px;
+	font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-decoration: none;
 	text-align: center;
-	border-radius: 4px;
+	margin: 0;
+	margin-top: 10px;
+	border-radius: 5px;
+	display: inline-block;
+	appearance: none;
+	cursor: pointer;
+	border: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+}
+.carrot_btn + .carrot_btn {
+    margin-top: 15px;
+}
+.carrot_btn.btn-small{
+	width: 80px;
+	height: 2rem;
+	line-height: 2rem;
+}
+.carrot_btn.btn-large{
+	width: 50%;
+	height: 3rem;
+	line-height: 3rem;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.carrot_btn.btn-plus{
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+}
+.btn-primary{
+	background-color: #04BE02;
+	color: #fff;
+}
+.btn-primary:active{
+	background-color: #018c00;
+	color: rgba(255, 255, 255, 0.6);
+}
+.btn-primary.btn-disabled{
+	background-color: #04BE02;
+}
+.btn-warn{
+	background-color: #EF4F4F;
+	color: #fff;
+}
+.btn-warn:active{
+	background-color: #c13e3e;
+	color: rgba(255, 255, 255, 0.6);
+}
+.btn-warn.btn-disabled{
+	background-color: #EF4F4F;
+}
+.btn-default{
+	background-color: #fff;
+	border: 1px solid #5A5A5A;
+	color: #5A5A5A;
+}
+.btn-default:active, .btn-default.btn-disabled{
+	background-color: #fff;
+}
+.btn-disabled{
+	color: rgba(255, 255, 255, 0.6);
+	cursor: default !important;
+    appearance: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
